@@ -7,14 +7,13 @@ import {
   Javascript,
   Jest,
   MaterialUI,
-  Numpy,
-  Pandas,
-  Python,
   React,
   ReactTestingLibrary,
   Sass,
-  ScikitLearn,
+  Express,
   Typescript,
+  MySQL,
+  NodeJS,
 } from "../../assets/img";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
@@ -22,10 +21,10 @@ import i18next from "i18next";
 const Skills = () => {
   const [t] = useTranslation();
 
-  const [frontEnd, testing, machineLearning, versionControl] = [
+  const [frontEnd, testing, backend, versionControl] = [
     t("skills.frontEnd"),
     t("skills.testing"),
-    t("skills.machineLearning"),
+    t("skills.backend"),
     t("skills.versionControl"),
   ];
 
@@ -83,23 +82,19 @@ const Skills = () => {
       ],
     },
     {
-      title: machineLearning,
+      title: backend,
       elements: [
         {
-          skill: "Python",
-          children: <img src={Python} alt="Python" />,
+          skill: "NodeJS",
+          children: <img src={NodeJS} alt="NodeJS" />,
         },
         {
-          skill: "Scikit learn",
-          children: <img src={ScikitLearn} alt="ScikitLearn" />,
+          skill: "Express",
+          children: <img src={Express} alt="Express" />,
         },
         {
-          skill: "Pandas",
-          children: <img src={Pandas} alt="Pandas" />,
-        },
-        {
-          skill: "Numpy",
-          children: <img src={Numpy} alt="Numpy" />,
+          skill: "MySQL",
+          children: <img src={MySQL} alt="MySQL" />,
         },
       ],
     },

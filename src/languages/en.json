@@ -10,8 +10,8 @@
       "about-me": {
         "text_1": "Hi!",
         "text_2": "I am Eric, an experienced front end developer with more than 3 years of working experience located in Buenos Aires, Argentina.",
-        "text_3": "I has worked on E-commerce and cybersecurity projects with React and many libraries.",
-        "text_4": "I love create great user interfaces with clean and understable code. I am also an AI enthusiast.",
+        "text_3": "I has worked on E-commerce and cybersecurity projects with React, Typescript and many libraries.",
+        "text_4": "I love create great user interfaces with clean and easy to interpret code.",
         "text_5": "Scroll down to know more about me"
       },
       "experience": {
@@ -21,32 +21,36 @@
         "stack": "Stack",
         "temperies": {
           "project": "Auth security dashboard manager",
-          "task_1": "Customize more than 40 rehusable components from two libraries",
-          "task_2": "Added TLS in development to make work the full Webauthn flow to add different devices and methods as authenticators.",
-          "task_3": "QR code to add TOTP as authentication method",
-          "task_4": "General bug fixing even some API endpoints",
-          "task_5": "Consume REST and GraphQL APIs. Creation of all models and resolvers for GraphQL",
+          "task_1": "Ensure the good code quality and performance of the web app and deliver it in the estimated time",
+          "task_2": "Web application development with React, Typescript and several libraries",
+          "task_3": "REST and GraphQL APIs integration",
+          "task_4": "Bug fixing",
+          "task_5": "WebAuthn, TLS, QR code, maps (leaflet) and charts integration",
           "task_6": "Unit testing",
           "task_7": "Code review",
-          "task_8": "Several code refactor",
-          "task_9": "Estimate task and plan quarters",
+          "task_8": "Code refactor",
+          "task_9": "Mentoring trainee and junior developers",
+          "task_10": "Estimate task and plan quarters",
+          "task_11": "Creation of weekly and monthly reports",
           "stack": "React, Typescript, react-router, SaSS, Jest, React Testing Library, Mobx, Material UI, Blueprintjs, Framer motion, Nivo, i18next, react-qr-code, leaflet, Git"
         },
+
         "puzzle": {
           "project": "E-commerce dashboard manager",
-          "task_1": "Develop features",
-          "task_2": "Bug fixing",
-          "task_3": "Consume GraphQL APIs",
+          "task_1": "Web E-commerce applications development with React",
+          "task_2": "GraphQL APIs integration",
+          "task_3": "Bug fixing",
           "task_4": "Code review",
-          "task_5": "Daily and weekly meetings",
+          "task_5": "Tasks estimation and track of them",
+          "task_6": "Scrum ceremonies",
           "stack": "React, Typescript, Nextjs, react-router, react-hook-form, Formik, Git"
         }
       },
       "skills": {
         "frontEnd": "Front end",
         "testing": "Testing",
-        "machineLearning": "Machine learning",
-        "versionControl": "Version control"
+        "backend": "Back end",
+        "versionControl": "Control version"
       },
       "contact": {
         "getInTouch": "Get in touch",

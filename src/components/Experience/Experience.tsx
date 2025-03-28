@@ -5,36 +5,7 @@ import { useTranslation } from "react-i18next";
 const Experience = () => {
   const [t] = useTranslation();
 
-  const [
-    role,
-    project,
-    task,
-    stack,
-    temperiesProject,
-    temperiesTask_1,
-    temperiesTask_2,
-    temperiesTask_3,
-    temperiesTask_4,
-    temperiesTask_5,
-    temperiesTask_6,
-    temperiesTask_7,
-    temperiesTask_8,
-    temperiesTask_9,
-    temperiesStack,
-    puzzleProject,
-    puzzleTask_1,
-    puzzleTask_2,
-    puzzleTask_3,
-    puzzleTask_4,
-    puzzleTask_5,
-    puzzleStack,
-    jobTitle,
-  ] = [
-    t("experience.role"),
-    t("experience.project"),
-    t("experience.task"),
-    t("experience.stack"),
-    t("experience.temperies.project"),
+  const TEMPERIES_TASKS = [
     t("experience.temperies.task_1"),
     t("experience.temperies.task_2"),
     t("experience.temperies.task_3"),
@@ -44,13 +15,37 @@ const Experience = () => {
     t("experience.temperies.task_7"),
     t("experience.temperies.task_8"),
     t("experience.temperies.task_9"),
-    t("experience.temperies.stack"),
-    t("experience.puzzle.project"),
+    t("experience.temperies.task_10"),
+    t("experience.temperies.task_11"),
+  ];
+
+  const PUZZLE_TASKS = [
     t("experience.puzzle.task_1"),
     t("experience.puzzle.task_2"),
     t("experience.puzzle.task_3"),
     t("experience.puzzle.task_4"),
     t("experience.puzzle.task_5"),
+    t("experience.puzzle.task_6"),
+  ];
+
+  const [
+    role,
+    project,
+    task,
+    stack,
+    temperiesProject,
+    temperiesStack,
+    puzzleProject,
+    puzzleStack,
+    jobTitle,
+  ] = [
+    t("experience.role"),
+    t("experience.project"),
+    t("experience.task"),
+    t("experience.stack"),
+    t("experience.temperies.project"),
+    t("experience.temperies.stack"),
+    t("experience.puzzle.project"),
     t("experience.puzzle.stack"),
     t("job_title"),
   ];
@@ -102,15 +97,9 @@ const Experience = () => {
         </p>
         <p>{task}:</p>
         <ul>
-          <li>{temperiesTask_1}</li>
-          <li>{temperiesTask_2}</li>
-          <li>{temperiesTask_3}</li>
-          <li>{temperiesTask_4}</li>
-          <li>{temperiesTask_5}</li>
-          <li>{temperiesTask_6}</li>
-          <li>{temperiesTask_7}</li>
-          <li>{temperiesTask_8}</li>
-          <li>{temperiesTask_9}</li>
+          {TEMPERIES_TASKS.map((task) => (
+            <li key={task}>{task}</li>
+          ))}
         </ul>
         <p>
           {stack}: {temperiesStack}
@@ -140,11 +129,9 @@ const Experience = () => {
         </p>
         <p>{task}:</p>
         <ul>
-          <li>{puzzleTask_1}</li>
-          <li>{puzzleTask_2}</li>
-          <li>{puzzleTask_3}</li>
-          <li>{puzzleTask_4}</li>
-          <li>{puzzleTask_5}</li>
+          {PUZZLE_TASKS.map((task) => (
+            <li key={task}>{task}</li>
+          ))}
         </ul>
         <p>
           {stack}: {puzzleStack}
